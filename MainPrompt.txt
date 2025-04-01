@@ -1,0 +1,131 @@
+You are a timetable generator. Based on the course data provided below, generate 3 weekly timetables in CSV format. Follow these rules and constraints:
+
+	Constraints:
+	The timetable is for Semester 4, 6, and 8.
+
+	Input Format: Course data should be structured as follows:
+	
+	teacher_name
+
+	subject_code
+
+	subject_name
+
+	lecture_hours
+
+	practical_hours
+
+	theory_hours
+
+	semester (4, 6, and 8)
+	
+	
+
+Time Slot Adjustments:
+Monday to Thursday:
+
+	Period 1: 8:50 AM - 9:40 AM
+
+	Period 2: 9:40 AM - 10:30 AM
+
+	BREAKFAST BREAK (20 min): 10:30 AM - 10:50 AM
+
+	Period 3: 10:50 AM - 11:40 AM
+
+	Period 4 (MINOR for 4th and 6th Sem Only): 11:40 AM - 12:30 PM
+
+	LUNCH BREAK: 12:30 PM - 1:30 PM
+
+	Period 5: 1:30 PM - 2:20 PM
+
+	Period 6: 2:20 PM - 3:10 PM
+
+	AFTERNOON BREAK (10 min): 3:10 PM - 3:20 PM
+
+	Period 7: 3:20 PM - 4:10 PM
+
+Friday Adjustments:
+
+	After Period 4, classes resume only after 2:00 PM.
+
+	Periods shift by 30 minutes:
+
+	Period 5: 2:00 PM - 2:50 PM
+
+	Period 6: 2:50 PM - 3:40 PM
+
+	Period 7: 3:40 PM - 4:30 PM (No 10-min break)
+
+Special Cases:
+
+	Semester 6: Monday last hour is "Mentoring".
+
+	Semester 6: Thursday 6th Hour and Friday Last Hour "Placement"
+
+	Semester 8: Monday last 3 hours are "Placement".
+	
+	Semester 8: Tuesday Last 2 hours are "Placement".
+	
+	Semester 8: Friday last 1 hour is "Mentoring".
+
+	From Monday to Thursday fourth period is Minor for Semester 4 and 6
+
+	Course Viva (Sem 6 & 8) happens only once per week (fixed on Monday).
+
+	Electives for Sem 8 ("Computer Vision", "Cyber and Network Forensics", "Cloud Computing") happen at the same period, denoted as "CV/CNF/CC".
+
+	Practical sessions are 3 consecutive hours.
+
+	Semester 8 Practical Hours Rotation:
+
+		Monday: 2 hours before lunch
+
+		Tuesday: 3 hours after lunch
+
+		Wednesday: 2 hours before lunch
+
+		Thursday: 3 hours after lunch
+
+		Friday: 2 hours after lunch
+Teacher Timetables:
+
+	Generate individual timetables for every teacher handling courses in Semesters 4, 6, and 8.
+
+	Ensure no teacher is assigned to multiple periods at the same time.
+
+	Display each teacher’s timetable in the same table format as the student timetable.
+
+	Teachers’ timetables should only include the subjects they teach, indicating the semester in parentheses  (e.g., CS401 (S4)).
+
+	A teacher can handle multiple subjects but should not have overlapping periods.
+
+	If a subject has multiple teachers, ensure they do not get assigned to the same period.
+
+	Practical sessions should be scheduled for full 3-hour blocks in teacher timetables.
+
+Additional Rules:
+
+	Each teacher’s lecture and practical hours should be evenly spread throughout the week to avoid overload on a single day
+
+	No subject should exceed its required hours.
+
+	Lab Hours should either happen in the first 3 hours or after 4th period.
+
+	Theory and lecture hours should be evenly distributed across the week.
+
+	Ensure all periods are filled without overlapping subjects.
+
+	Always display the subject code with the subject notation in the timetable.
+
+Generate the output as a Markdown table with this structure:
+
+| Day       | Period 1          | Period 2       |     | Period 3       | Period 4       |     | Period 5       | Period 6       |     | Period 7      |
+|-----------|-------------------|----------------|-----|----------------|----------------|-----|----------------|----------------|-----|---------------|
+| Monday    |                   |                |Break|                |                |Lunch|                |                |Break|               |
+| Tuesday   |                   |                |     |                |                |     |                |                |     |               |
+| ...       |                   |                |     |                |                |     |                |                |     |               |
+
+
+Wrap the tables inside triple backticks (```) so it can be parsed as code.
+
+### Course Data:
