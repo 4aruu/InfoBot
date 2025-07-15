@@ -42,7 +42,7 @@ cd infobot
 
 Want the whole project in one go? Download it as a zip:
 
-🔗 [Download InfoBot.zip from Google Drive](https://drive.google.com/drive/folders/1E5kULrmRUtieSEXM9r9COAdLWhehS-4y?usp=drive_link)
+🔗 [Download InfoBot.zip from Google Drive][(https://drive.google.com/drive/folders/1E5kULrmRUtieSEXM9r9COAdLWhehS-4y?usp=drive_link)]
 
 > ⚠️ Make sure to allow access via **“Anyone with the link can view”** on Google Drive.
 
