@@ -19,7 +19,7 @@ InfoBot is an intelligent chatbot system designed to streamline academic managem
 |------------|------------|
 | **Backend** | Python (FastAPI) |
 | **Database** | MySQL, MongoDB (phpMyAdmin) |
-| **Frontend** | *(To be decided)* |
+| **Frontend** | React |
 | **Hosting & Deployment** | *(Specify if applicable)* |
 
 ---
@@ -37,3 +37,14 @@ InfoBot is an intelligent chatbot system designed to streamline academic managem
 ```bash
 git clone https://github.com/yourusername/infobot.git
 cd infobot
+---
+## ☁️ External Download
+
+Want the whole project in one go? Download it as a zip:
+
+🔗 [Download InfoBot.zip from Google Drive](https://drive.google.com/your-shared-link-here)
+
+> ⚠️ Make sure to allow access via **“Anyone with the link can view”** on Google Drive.
+
+---
+
