@@ -18,7 +18,7 @@ InfoBot is an intelligent chatbot system designed to streamline academic managem
 | Component           | Technology         |
 |---------------------|--------------------|
 | **Backend**         | Python (FastAPI)   |
-| **Database**        | MySQL, MongoDB     |
+| **Database**        | MySQL    |
 | **Database UI**     | phpMyAdmin         |
 | **Frontend**        | React              |
 | **Hosting & Deployment** | *(Specify if applicable)* |
